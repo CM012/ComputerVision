@@ -1,6 +1,6 @@
 import cv2
 
-image=cv2.imread("/Users/charles/Documents/MyProjects/ComputerVision/Tutorial/opencv_logo.jpg")
+image=cv2.imread("Tutorial/photos/opencv_logo.jpg")
 
 #crop[row(range), column(range)]
 crop = image[10:170,40:200]
