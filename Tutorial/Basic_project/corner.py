@@ -1,6 +1,6 @@
 import cv2
 
-image = cv2.imread("Tutorial/photos/opencv_logo.jpg")
+image = cv2.imread("/Users/charles/Documents/MyProjects/ComputerVision/Tutorial/Basic_project/photos/opencv_logo.jpg")
 
 #This code is used to convert colour photo into gray one
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)

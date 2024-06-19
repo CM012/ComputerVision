@@ -1,7 +1,7 @@
 import cv2
 
 #That means you only read the greyscale of the photo
-gray = cv2.imread("/Users/charles/Documents/MyProjects/ComputerVision/Tutorial/photos/bookpage.jpg", cv2.IMREAD_GRAYSCALE)
+gray = cv2.imread("/Users/charles/Documents/MyProjects/ComputerVision/Tutorial/Basic_project/photos/bookpage.jpg", cv2.IMREAD_GRAYSCALE)
 ret, binary = cv2.threshold(gray, 10, 255, cv2.THRESH_BINARY)
 #Cut the photo into six parts and handle them individually
 binary_adaptive = cv2.adaptiveThreshold(

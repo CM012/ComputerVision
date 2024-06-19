@@ -1,6 +1,6 @@
 import cv2
 
-gray = cv2.imread("/Users/charles/Documents/MyProjects/ComputerVision/Tutorial/photos/opencv_logo.jpg", cv2.IMREAD_GRAYSCALE)
+gray = cv2.imread("/Users/charles/Documents/MyProjects/ComputerVision/Tutorial/Basic_project/photos/opencv_logo.jpg", cv2.IMREAD_GRAYSCALE)
 
 #Second order derivative, used to find edges in an image
 laplacian = cv2.Laplacian(gray, cv2.CV_64F)

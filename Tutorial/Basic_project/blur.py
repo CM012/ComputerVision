@@ -1,5 +1,5 @@
 import cv2
-image = cv2.imread("/Users/charles/Documents/MyProjects/ComputerVision/Tutorial/photos/plane.jpg")
+image = cv2.imread("/Users/charles/Documents/MyProjects/ComputerVision/Tutorial/Basic_project/photos/plane.jpg")
 
 gauss = cv2.GaussianBlur(image, (5,5), 0)
 median = cv2.medianBlur(image, 5)

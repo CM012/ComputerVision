@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-image = cv2.imread("/Users/charles/Documents/MyProjects/ComputerVision/Tutorial/photos/poker.jpg")
+image = cv2.imread("Tutorial/Basic_project/photos/poker.jpg")
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 #Used to get one template, eg. a pattern on the poker
