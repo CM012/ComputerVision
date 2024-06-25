@@ -5,6 +5,21 @@ import imutils
 import cv2
 import myutils
 
+ap = argparse.ArgumentParser()
+ap.add_argument("-i", "--image",required=True,
+                help="/Users/charles/Documents/MyProjects/ComputerVision/Tutorial/Advanced_Projects/reco_car_plate_project/Materials/credit_card.jpg")
+ap.add_argument("-t","--template", required=True,
+                help="/Users/charles/Documents/MyProjects/ComputerVision/Tutorial/Advanced_Projects/reco_car_plate_project/Materials/template.jpg")
+args = vars(ap.parse_args())
+
+#know the credit card type
+FIRST_NUMBER = {
+    "3": "AE",
+    "4": "VISA",
+    "5": "MASTERCARD",
+    "6": "DISCOVER CARD"
+}
+
 def cv_show(name, img):
     cv2.imshow(name, img)
     cv2.waitKey(0)
